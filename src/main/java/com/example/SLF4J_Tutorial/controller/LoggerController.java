@@ -28,6 +28,10 @@ public class LoggerController {
 }
 
 /**
+  check the logs in the terminal voh is format ke hote hai dateAndTime LoggingLevel ProcessId packageName LoggingMessage
+ */
+
+/**
     Hume baar baar har class mai ye likhna padega
 
     private static final Logger logger= LoggerFactory.getLogger(LoggerController.class);

@@ -1,0 +1,11 @@
+# check the logs in the terminal voh is format ke hote hai dateAndTime LoggingLevel ProcessId packageName LoggingMessage
+
+logging:
+  level:
+    #    jin logs mai package name c.e.S.Slf4JTutorialApplication se alag hoga  unke only error vaale logging message dikhege like initialized tomcat, starting tomcat, ye sab nhi dikhege
+    root: ERROR
+    #    jin logs mai package name c.e.S.Slf4JTutorialApplication hoga unke saare logging message dikhege like starting springboot, running springboot, no active profile set and jo tumne LoggingController mai daale hai vo sab dikhege
+    com:
+      example:
+        SLF4J_Tutorial: TRACE
+    # Hum logging leve ko OFF bhi kr skte hai toh us particular package/class ke logs nhi aaege
