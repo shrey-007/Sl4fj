@@ -1,14 +1,16 @@
 package com.example.SLF4J_Tutorial.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@Slf4j
 public class LoggerController {
 
-    private static final Logger logger= LoggerFactory.getLogger(LoggerController.class);
+//    private static final Logger logger= LoggerFactory.getLogger(LoggerController.class);
 
     @RequestMapping("/")
     public String index(){
@@ -16,11 +18,11 @@ public class LoggerController {
 
         int example=34;
 
-        logger.trace("this is trace message, we can also provide arguments like this {}",example);
-        logger.debug("this is debug message");
-        logger.info("this is info message");
-        logger.warn("this is warn message");
-        logger.error("this is error message");
+        log.trace("this is trace message, we can also provide arguments like this {}",example);
+        log.debug("this is debug message");
+        log.info("this is info message");
+        log.warn("this is warn message");
+        log.error("this is error message");
         return "see the logs";
     }
 }
