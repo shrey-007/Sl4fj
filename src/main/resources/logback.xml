@@ -1,0 +1,29 @@
+<configuration>
+
+<!--    appender batata hai ki log kaha chaapna hai console mai ya file mai ya database vagera-->
+<!--    Toh ye do appender bana liye pehle-->
+<!--    Appender ko pattern chaiye hota hao logs ka toh vh dono appender mai daal do-->
+    <appender name="myConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{HH:mm:SS.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="myFileAppender" class="ch.qos.logback.core.FileAppender">
+        <encoder>
+            <pattern>
+                %d{HH:mm:SS.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+        <file>journalApp.log</file>
+    </appender>
+
+<!--    root package mai info, warn , error enable krdi and dono appender reference mai de diye means log console mai bhi print hoge and journalApp.log mai bhi-->
+    <root level="INFO">
+        <appender-ref ref="myConsoleAppender"/>
+        <appender-ref ref="myFileAppender"/>
+    </root>
+
+</configuration>
