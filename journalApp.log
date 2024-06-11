@@ -1,9 +1,5 @@
-13:53:67.677 [main] INFO  c.e.S.Slf4JTutorialApplication - Starting Slf4JTutorialApplication using Java 19.0.1 with PID 13204 (C:\Users\shrey\Desktop\springboot\SLF4J_Tutorial\target\classes started by shrey in C:\Users\shrey\Desktop\springboot\SLF4J_Tutorial)
-13:53:67.679 [main] DEBUG c.e.S.Slf4JTutorialApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
-13:53:68.680 [main] INFO  c.e.S.Slf4JTutorialApplication - No active profile set, falling back to 1 default profile: "default"
-13:53:28.285 [main] INFO  c.e.S.Slf4JTutorialApplication - Started Slf4JTutorialApplication in 2.112 seconds (process running for 2.718)
-13:53:61.617 [http-nio-8080-exec-1] TRACE c.e.S.controller.LoggerController - this is trace message, we can also provide arguments like this 34
-13:53:61.618 [http-nio-8080-exec-1] DEBUG c.e.S.controller.LoggerController - this is debug message
-13:53:61.618 [http-nio-8080-exec-1] INFO  c.e.S.controller.LoggerController - this is info message
-13:53:61.618 [http-nio-8080-exec-1] WARN  c.e.S.controller.LoggerController - this is warn message
-13:53:61.618 [http-nio-8080-exec-1] ERROR c.e.S.controller.LoggerController - this is error message
+14:11:56.563 [http-nio-8080-exec-1] TRACE c.e.S.controller.LoggerController - this is trace message, we can also provide arguments like this 34
+14:11:57.573 [http-nio-8080-exec-1] DEBUG c.e.S.controller.LoggerController - this is debug message
+14:11:57.573 [http-nio-8080-exec-1] INFO  c.e.S.controller.LoggerController - this is info message
+14:11:57.574 [http-nio-8080-exec-1] WARN  c.e.S.controller.LoggerController - this is warn message
+14:11:57.574 [http-nio-8080-exec-1] ERROR c.e.S.controller.LoggerController - this is error message
